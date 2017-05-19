@@ -1,4 +1,4 @@
-<form method="post" action="31.php" >
+<form method="post" action="/31.php" >
     <input type="text" name="username"/> <br>
     <input type="text" name="email"/> <br>
     <input type="textarea" name="message"> <br>
@@ -10,7 +10,7 @@
 $arr=$_POST;
 print_r($arr);
 echo '<br>';
-echo $ser=serialize($arr);
+echo serialize($arr);
 
 
 ?>

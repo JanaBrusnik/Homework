@@ -1,16 +1,21 @@
 <?php
-$arr = array();
-$n=1;
-for ($i=0; $i<100; $i++ ){
-    $arr[$i] = $n;
-    $n++;
-};
-print_r($arr);
-echo '<br';
+$flag = true;
 
-for($j=)
-if($arr[$i]%2==0){
-    unset($arr[$i]);
+for($i = 200; $i <= 400; $i++) {
+
+    for($j = 2; $j < $i; $j++) {
+        if($i % $j == 0) {
+            $flag = false;
+            break;
+        }
+    }
+
+    if($flag)
+    {
+        echo $i." ";
+        break;
+    }
+    $flag = true;
 
 
 

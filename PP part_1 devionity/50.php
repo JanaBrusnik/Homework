@@ -1,18 +1,17 @@
 <?php
-
-
 $flag = true;
 
-for($i = 200; $i <= 400; $i++) {
+for($i = 2; $i <= 100; $i++):
 
-    for($j = 2; $j < $i; $j++) {
-        if($i % $j == 0) {
+    for($j = 2; $j < $i; $j++):
+        if($i % $j == 0):
             $flag = false;
             break;
-        }
-    }
+        endif;
+    endfor;
 
-    if($flag) echo $i." ";
-    break;
-
-}
+    if($flag):
+        echo $i." ";
+    endif;
+    $flag = true;
+endfor;
