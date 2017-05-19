@@ -1,7 +1,21 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Яна
- * Date: 15.05.2017
- * Time: 16:21
- */
+//
+
+$a = 6;
+$b = 0;
+$operator = '/';
+if ($b==0)
+{
+    echo 'Forbidden! Division by zero!';
+}
+else{
+
+    switch($operator) {
+        case '+': echo $a+$b; break;
+        case '-': echo $a-$b; break;
+        case '*': echo $a*$b; break;
+        case '/': echo $a/$b; break;
+        case '%': echo $a%$b; break;
+        default: echo 'Ooops';
+    }
+}
