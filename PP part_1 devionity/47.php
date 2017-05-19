@@ -1,7 +1,7 @@
 <?php
 $flag = true;
 
-for($i = 200; $i <= 400; $i++) {
+for($i = 2; $i <= 400; $i++) {
 
     for($j = 2; $j < $i; $j++) {
         if($i % $j == 0) {
@@ -11,10 +11,8 @@ for($i = 200; $i <= 400; $i++) {
     }
 
     if($flag)
-    {
-        echo $i." ";
-        break;
-    }
+       echo $i." ";
+       
     $flag = true;
 
 
